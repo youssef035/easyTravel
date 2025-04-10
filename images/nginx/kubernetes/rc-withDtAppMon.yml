@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: dynatrace/easytravel-nginx
+        image: youssef035/easytravel-nginx
         env:
         - name: DT_AGENT_NAME
           value: www_easyTravelKube
