@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: mongodb
-        image: dynatrace/easytravel-mongodb
+        image: youssef035/easytravel-mongodb
         ports:
         - containerPort: 27017
         - containerPort: 28017
