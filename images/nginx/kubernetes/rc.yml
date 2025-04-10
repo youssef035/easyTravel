@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: dynatrace/easytravel-nginx
+        image: youssef035/easytravel-nginx
         ports:
         - containerPort: 80
         - containerPort: 443
