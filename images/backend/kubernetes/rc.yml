@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: dynatrace/easytravel-backend
+        image: youssef035/easytravel-backend
         env:
         - name: ET_DATABASE_LOCATION
           value: "mongodb:27017"
