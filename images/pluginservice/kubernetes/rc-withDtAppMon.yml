@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: pluginservice
-        image: dynatrace/easytravel-pluginservice
+        image: youssef035/easytravel-pluginservice
         env:
         - name: CATALINA_OPTS
           value: "-agentpath:/srv/dynatrace/agent/lib64/libdtagent.so=name=pluginservice_easyTravelKube,collector=localhost:9998"
