@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: angularfrontend
-        image: dynatrace//easytravel-angular-frontend
+        image: youssef035//easytravel-angular-frontend
         env:
         - name: ET_BACKEND_URL
           value: "http://backend:8080"
