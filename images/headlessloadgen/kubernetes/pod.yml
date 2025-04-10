@@ -7,4 +7,4 @@ metadata:
 spec:
   containers:
   - name: loadgen
-    image: dynatrace/easytravel-headless-loadgen
+    image: youssef035/easytravel-headless-loadgen
