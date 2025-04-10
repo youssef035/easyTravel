@@ -17,7 +17,7 @@ spec:
         - env:
             - name: ET_BACKEND_URL
               value: http://backend-service:8080
-          image: dynatrace/easytravel-angular-frontend
+          image: youssef035/easytravel-angular-frontend
           imagePullPolicy: Always
           name: angular-frontend
           ports:
