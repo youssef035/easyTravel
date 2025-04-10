@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: dynatrace/easytravel-frontend
+        image: youssef035/easytravel-frontend
         env:
         - name: CATALINA_OPTS
           value: "-agentpath:/srv/dynatrace/agent/lib64/libdtagent.so=name=frontend_easyTravelKube,collector=localhost:9998"
