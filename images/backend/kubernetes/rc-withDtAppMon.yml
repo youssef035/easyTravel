@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: dynatrace/easytravel-backend
+        image: youssef035/easytravel-backend
         env:
         - name: CATALINA_OPTS
           value: "-agentpath:/srv/dynatrace/agent/lib64/libdtagent.so=name=backend_easyTravelKube,collector=localhost:9998"
