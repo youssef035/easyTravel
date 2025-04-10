@@ -24,7 +24,7 @@ spec:
               value: etAdmin
             - name: ET_DATABASE_PASSWORD
               value: adminadmin
-          image: dynatrace/easytravel-backend
+          image: youssef035/easytravel-backend
           imagePullPolicy: Always
           name: backend
           ports:
