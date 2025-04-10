@@ -5,7 +5,7 @@ metadata:
 spec:
   restartPolicy: OnFailure
   containers:
-    - image: dynatrace/easytravel-mongodb-content-creator
+    - image: youssef035/easytravel-mongodb-content-creator
       name: mongodb-contentcreator
       imagePullPolicy: Always
       env:
