@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: pluginservice
-        image: dynatrace/easytravel-pluginservice
+        image: youssef035/easytravel-pluginservice
         ports:
         - containerPort: 7654
