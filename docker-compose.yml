@@ -14,7 +14,10 @@ services:
     <<: *default-service
     hostname: easytravel-mongodb
     container_name: mongodb
-    image: "youssef035/easytravel-mongodb"
+    build:
+      context: ./images/mongodb
+      dockerfile: Dockerfile
+    # image: "youssef035/easytravel-mongodb"  # For production
     ports:
       - 27017
       - 28017
@@ -23,7 +26,10 @@ services:
     <<: *default-service      
     hostname: easytravel-backend
     container_name: backend
-    image: "youssef035/easytravel-backend"
+    build:
+      context: ./images/backend
+      dockerfile: Dockerfile
+    # image: "youssef035/easytravel-backend"
     ports:
       - 8091:8080
     links:
@@ -39,7 +45,10 @@ services:
     <<: *default-service      
     hostname: easytravel-frontend
     container_name: frontend
-    image: "youssef035/easytravel-frontend"
+    build:
+      context: ./images/frontend
+      dockerfile: Dockerfile
+    # image: "youssef035/easytravel-frontend"
     ports:
       - 8080
     links:
@@ -53,7 +62,10 @@ services:
     <<: *default-service      
     hostname: easytravel-angular-frontend
     container_name: angular-frontend
-    image: "youssef035/easytravel-angular-frontend"
+    build:
+      context: ./images/angularfrontend
+      dockerfile: Dockerfile
+    # image: "youssef035/easytravel-angular-frontend"
     ports:
       - 8080
     links:
@@ -67,7 +79,10 @@ services:
     <<: *default-service       
     hostname: easytravel-www
     container_name: www
-    image: "youssef035/easytravel-nginx"
+    build:
+      context: ./images/nginx
+      dockerfile: Dockerfile
+    # image: "youssef035/easytravel-nginx"
     ports:
       - 80:80
       - 9079:9079
@@ -84,7 +99,10 @@ services:
   headless-customer-loadgen:
     <<: *default-service      
     container_name: headless-customer-loadgen
-    image: "youssef035/easytravel-headless-loadgen"
+    build:
+      context: ./images/headlessloadgen
+      dockerfile: Dockerfile
+    # image: "youssef035/easytravel-headless-loadgen"
     links:
       - backend
       - frontend
@@ -98,7 +116,10 @@ services:
   headless-angular-loadgen:
     <<: *default-service      
     container_name: headless-angular-loadgen
-    image: "youssef035/easytravel-headless-loadgen"
+    build:
+      context: ./images/headlessloadgen
+      dockerfile: Dockerfile
+    # image: "youssef035/easytravel-headless-loadgen"
     links:
       - backend
       - angular-frontend
@@ -112,7 +133,10 @@ services:
   loadgen:
     <<: *default-service      
     container_name: loadgen
-    image: "youssef035/easytravel-loadgen"
+    build:
+      context: ./images/loadgen
+      dockerfile: Dockerfile
+    # image: "youssef035/easytravel-loadgen"
     links:
       - backend
       - frontend
